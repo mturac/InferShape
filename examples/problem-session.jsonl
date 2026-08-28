@@ -1,0 +1,13 @@
+{"timestamp":"2026-08-28T08:00:00.000Z","type":"session_start","session_id":"demo-problem","objective":"Fix the checkout retry bug","scope_paths":["src/checkout","test/checkout"]}
+{"timestamp":"2026-08-28T08:00:02.000Z","type":"file_read","session_id":"demo-problem","path":"src/checkout/retry.ts","content":"secret source content is ignored"}
+{"timestamp":"2026-08-28T08:00:03.000Z","type":"file_read","session_id":"demo-problem","path":"src/checkout/retry.ts"}
+{"timestamp":"2026-08-28T08:00:04.000Z","type":"file_read","session_id":"demo-problem","path":"src/checkout/retry.ts"}
+{"timestamp":"2026-08-28T08:00:05.000Z","type":"file_write","session_id":"demo-problem","path":"src/checkout/retry.ts","content_hash":"a1"}
+{"timestamp":"2026-08-28T08:00:06.000Z","type":"file_write","session_id":"demo-problem","path":"src/checkout/retry.ts","content_hash":"b2"}
+{"timestamp":"2026-08-28T08:00:07.000Z","type":"file_write","session_id":"demo-problem","path":"src/checkout/retry.ts","content_hash":"a1"}
+{"timestamp":"2026-08-28T08:00:08.000Z","type":"file_write","session_id":"demo-problem","path":"README.md","content_hash":"c3"}
+{"timestamp":"2026-08-28T08:00:10.000Z","type":"test_run","session_id":"demo-problem","command":"npm test","outcome":"failure","duration_ms":1200,"test_scope":"full","output":"private test output ignored"}
+{"timestamp":"2026-08-28T08:00:12.000Z","type":"test_run","session_id":"demo-problem","command":"npm test","outcome":"failure","duration_ms":1100,"test_scope":"full"}
+{"timestamp":"2026-08-28T08:00:14.000Z","type":"test_run","session_id":"demo-problem","command":"npm test","outcome":"failure","duration_ms":1000,"test_scope":"full"}
+{"timestamp":"2026-08-28T08:00:16.000Z","type":"completion_claim","session_id":"demo-problem","claim":"done","message":"Everything is complete"}
+{"timestamp":"2026-08-28T08:00:17.000Z","type":"session_end","session_id":"demo-problem","status":"success"}

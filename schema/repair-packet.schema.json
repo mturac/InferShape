@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mturac/InferShape/schema/repair-packet.schema.json",
+  "title": "InferShape privacy-safe repair packet",
+  "type": "object",
+  "required": ["schemaVersion", "kind", "sessionId", "sourceProfileHash", "status", "objectiveHash", "changedFiles", "unresolvedFailures", "verifiedFacts", "nextActions", "safeResumeSummary", "packetHash"],
+  "properties": {
+    "schemaVersion": { "const": "1" },
+    "kind": { "const": "infershape.repair-packet" },
+    "sessionId": { "type": "string" },
+    "sourceProfileHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "status": { "enum": ["verified", "incomplete", "failed", "blocked"] },
+    "objectiveHash": { "type": ["string", "null"] },
+    "changedFiles": { "type": "array", "items": { "type": "string" } },
+    "unresolvedFailures": { "type": "array" },
+    "verifiedFacts": { "type": "array", "items": { "type": "string" } },
+    "nextActions": { "type": "array" },
+    "safeResumeSummary": { "type": "string" },
+    "packetHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  },
+  "additionalProperties": false
+}
