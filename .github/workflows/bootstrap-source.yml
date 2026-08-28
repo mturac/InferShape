@@ -4,7 +4,6 @@ on:
   push:
     branches: [feat/infershape-core]
     paths:
-      - ".bootstrap/source.*"
       - ".github/workflows/bootstrap-source.yml"
 
 permissions:
@@ -36,8 +35,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          cp .github/workflows/bootstrap-source.yml /tmp/bootstrap-source.yml
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
           tar -xzf /tmp/infershape.tar.gz -C .
+          rm -f .github/workflows/ci.yml
+          mkdir -p .github/workflows
+          cp /tmp/bootstrap-source.yml .github/workflows/bootstrap-source.yml
           test -f package.json
           test -f src/analyze.ts
           test -f README.md
