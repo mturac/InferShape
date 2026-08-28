@@ -1,0 +1,53 @@
+name: Bootstrap source
+
+on:
+  push:
+    branches: [feat/infershape-core]
+    paths:
+      - ".bootstrap/source.*"
+      - ".github/workflows/bootstrap-source.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out staging branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: feat/infershape-core
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Reconstruct and validate source archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .bootstrap/source.* | tr -d '\r\n' | base64 --decode > /tmp/infershape.tar.gz
+          echo "d9762fec9b435684a08c72fb68bcb7cb486c34846618f48a058e672399c4aad7  /tmp/infershape.tar.gz" | sha256sum --check --strict
+          tar -tzf /tmp/infershape.tar.gz | grep -qx './package.json'
+          tar -tzf /tmp/infershape.tar.gz | grep -qx './src/analyze.ts'
+          tar -tzf /tmp/infershape.tar.gz | grep -qx './README.md'
+
+      - name: Materialize repository source
+        shell: bash
+        run: |
+          set -euo pipefail
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          tar -xzf /tmp/infershape.tar.gz -C .
+          test -f package.json
+          test -f src/analyze.ts
+          test -f README.md
+          chmod +x bin/infershape.mjs
+
+      - name: Commit materialized source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: add coding-agent session intelligence"
+          git push origin HEAD:feat/infershape-core
