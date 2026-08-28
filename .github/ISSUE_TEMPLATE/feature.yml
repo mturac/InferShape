@@ -1,0 +1,19 @@
+name: Feature request
+description: Propose a coding-agent session diagnosis or repair capability.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: journey
+    attributes:
+      label: User journey
+      description: What should a vibe coder be able to learn or repair?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Required evidence
+      description: Which sanitized events prove the behavior?
+    validations:
+      required: true

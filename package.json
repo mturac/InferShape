@@ -1,0 +1,61 @@
+{
+  "name": "@mturac/infershape",
+  "version": "0.1.0",
+  "description": "Deterministic coding-agent session analysis, failure diagnosis, and privacy-safe repair packets.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "Mehmet Turac",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mturac/InferShape.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mturac/InferShape/issues"
+  },
+  "homepage": "https://github.com/mturac/InferShape#readme",
+  "keywords": [
+    "coding-agent",
+    "vibe-coding",
+    "agent-observability",
+    "session-analysis",
+    "failure-diagnosis",
+    "repair-packet",
+    "codex",
+    "claude-code"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "bin/",
+    "dist/",
+    "schema/",
+    "examples/",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md"
+  ],
+  "bin": {
+    "infershape": "./bin/infershape.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "npm run build && node --check bin/infershape.mjs",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "test:types": "tsc -p tsconfig.type-tests.json",
+    "verify:assets": "node scripts/verify-assets.mjs",
+    "verify:package": "node scripts/package-smoke.mjs",
+    "verify": "npm run check && npm run test:types && node --test test/*.test.mjs && npm run verify:assets && npm run verify:package"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}

@@ -1,0 +1,26 @@
+name: Bug report
+description: Report incorrect session normalization, analysis, or repair output.
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the observable behavior without including secrets or private trace content.
+    validations:
+      required: true
+  - type: textarea
+    id: fixture
+    attributes:
+      label: Minimal sanitized fixture
+      description: Include the smallest JSON/JSONL records that reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: Commands and actual output.
+    validations:
+      required: true

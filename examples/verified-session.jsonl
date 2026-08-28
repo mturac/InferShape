@@ -1,0 +1,7 @@
+{"timestamp":"2026-08-28T09:00:00.000Z","type":"session_start","session_id":"demo-verified","objective":"Fix the checkout retry bug","scope_paths":["src/checkout","test/checkout"]}
+{"timestamp":"2026-08-28T09:00:01.000Z","type":"file_read","session_id":"demo-verified","path":"src/checkout/retry.ts"}
+{"timestamp":"2026-08-28T09:00:03.000Z","type":"file_write","session_id":"demo-verified","path":"src/checkout/retry.ts","content_hash":"fixed"}
+{"timestamp":"2026-08-28T09:00:04.000Z","type":"file_write","session_id":"demo-verified","path":"test/checkout/retry.test.ts","content_hash":"test"}
+{"timestamp":"2026-08-28T09:00:06.000Z","type":"test_run","session_id":"demo-verified","command":"npm test -- retry.test.ts","outcome":"success","duration_ms":800,"test_scope":"focused"}
+{"timestamp":"2026-08-28T09:00:08.000Z","type":"completion_claim","session_id":"demo-verified","claim":"done"}
+{"timestamp":"2026-08-28T09:00:09.000Z","type":"session_end","session_id":"demo-verified","status":"success"}
