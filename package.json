@@ -56,6 +56,6 @@
     "verify": "npm run check && npm run test:types && node --test test/*.test.mjs && npm run verify:assets && npm run verify:package"
   },
   "devDependencies": {
-    "typescript": "5.8.3"
+    "typescript": "7.0.2"
   }
 }
