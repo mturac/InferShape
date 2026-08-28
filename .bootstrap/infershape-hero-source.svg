@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="860" viewBox="0 0 1536 860">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07101f"/>
+      <stop offset="0.52" stop-color="#0e1835"/>
+      <stop offset="1" stop-color="#20255b"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c8cff"/>
+      <stop offset="1" stop-color="#b7c6ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1536" height="860" fill="url(#bg)"/>
+  <path d="M800 0h736v860H960c-160-118-258-270-278-455C658 206 710 72 800 0Z" fill="#222965" opacity="0.22"/>
+  <g opacity="0.28" fill="none" stroke="#7385df" stroke-width="1.2">
+    <path d="M820 84h82l28-22h98"/><path d="M816 112h110l34 30h86"/><path d="M800 145h66l34-28h135"/>
+    <path d="M835 181h120l28-22h82"/><path d="M865 310h82l30-30h70"/><path d="M858 340h118l24 24h70"/>
+  </g>
+  <g fill="#92a5ff" opacity="0.6"><circle cx="903" cy="84" r="3"/><circle cx="1028" cy="62" r="4"/><circle cx="960" cy="142" r="3"/><circle cx="1046" cy="181" r="4"/><circle cx="977" cy="280" r="3"/><circle cx="1038" cy="364" r="4"/></g>
+
+  <!-- mark -->
+  <g transform="translate(36 31)">
+    <rect x="0" y="0" width="72" height="72" rx="14" fill="none" stroke="#91a4ef" stroke-width="4"/>
+    <rect x="13" y="13" width="46" height="46" rx="8" fill="none" stroke="#5869aa" stroke-width="3"/>
+    <circle cx="36" cy="36" r="14" fill="none" stroke="#d9e2ff" stroke-width="3"/>
+    <path d="M36 11v50M11 36h50" stroke="#8fa4ff" stroke-width="3"/>
+  </g>
+
+  <text x="132" y="82" font-family="DejaVu Sans,Arial,sans-serif" font-size="58" font-weight="800" fill="#f8fafc">InferShape</text>
+  <text x="132" y="129" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#c9d4f0">Coding-agent session intelligence for vibe coders.</text>
+  <text x="132" y="168" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="700" fill="#dce5ff">See why the agent stalled. Resume from evidence. Stop false completion.</text>
+
+  <!-- feature cards -->
+  <g font-family="DejaVu Sans,Arial,sans-serif">
+    <g transform="translate(44 204)"><rect width="330" height="90" rx="16" fill="#101a34" stroke="#35447f"/><circle cx="39" cy="45" r="20" fill="#18254b" stroke="#b7c6ff" stroke-width="2"/><text x="72" y="35" font-size="17" font-weight="700" fill="#f8fafc">Session Doctor</text><text x="72" y="61" font-size="13" fill="#aebce5">Repeated reads, loops and patch churn</text></g>
+    <g transform="translate(404 204)"><rect width="330" height="90" rx="16" fill="#101a34" stroke="#35447f"/><circle cx="39" cy="45" r="20" fill="#18254b" stroke="#b7c6ff" stroke-width="2"/><path d="m31 45 6 6 12-15" fill="none" stroke="#a7b7ff" stroke-width="3"/><text x="72" y="35" font-size="17" font-weight="700" fill="#f8fafc">Proof-Aware</text><text x="72" y="61" font-size="13" fill="#aebce5">Flags done-before-verification claims</text></g>
+    <g transform="translate(764 204)"><rect width="330" height="90" rx="16" fill="#101a34" stroke="#35447f"/><circle cx="39" cy="45" r="20" fill="#18254b" stroke="#b7c6ff" stroke-width="2"/><path d="M29 45h19m-7-7 8 7-8 7" fill="none" stroke="#a7b7ff" stroke-width="3"/><text x="72" y="35" font-size="17" font-weight="700" fill="#f8fafc">Repair Packet</text><text x="72" y="61" font-size="13" fill="#aebce5">Safe handoff to the next coding agent</text></g>
+    <g transform="translate(1124 204)"><rect width="330" height="90" rx="16" fill="#101a34" stroke="#35447f"/><circle cx="39" cy="45" r="20" fill="#18254b" stroke="#b7c6ff" stroke-width="2"/><path d="M30 45h18M39 36v18" stroke="#a7b7ff" stroke-width="3"/><text x="72" y="35" font-size="17" font-weight="700" fill="#f8fafc">Local &amp; Private</text><text x="72" y="61" font-size="13" fill="#aebce5">No prompt, output or reasoning content</text></g>
+  </g>
+
+  <!-- report panel -->
+  <g filter="url(#shadow)">
+    <rect x="38" y="331" width="892" height="481" rx="25" fill="#f4f7fd" stroke="#a9b9e8" stroke-width="2"/>
+  </g>
+  <text x="68" y="379" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="800" fill="#17264f">From raw agent activity to an actionable repair handoff</text>
+
+  <g font-family="DejaVu Sans,Arial,sans-serif">
+    <g transform="translate(70 424)"><circle cx="26" cy="26" r="25" fill="#eef2ff" stroke="#697bab" stroke-width="2"/><text x="18" y="34" font-size="20" font-weight="700" fill="#394b79">1</text><text x="0" y="88" font-size="17" font-weight="700" fill="#17264f">Ingest</text><text x="0" y="112" font-size="12" fill="#566995">Codex / Claude / OTel / JSONL</text></g>
+    <path d="M123 450h137" stroke="#b7c8ed" stroke-width="4"/><path d="m251 442 12 8-12 8" fill="#b7c8ed"/>
+    <g transform="translate(280 424)"><circle cx="26" cy="26" r="25" fill="#eef2ff" stroke="#697bab" stroke-width="2"/><text x="18" y="34" font-size="20" font-weight="700" fill="#394b79">2</text><text x="0" y="88" font-size="17" font-weight="700" fill="#17264f">Normalize</text><text x="0" y="112" font-size="12" fill="#566995">Strip prompts, outputs and secrets</text></g>
+    <path d="M333 450h137" stroke="#b7c8ed" stroke-width="4"/><path d="m461 442 12 8-12 8" fill="#b7c8ed"/>
+    <g transform="translate(490 424)"><circle cx="26" cy="26" r="25" fill="#eef2ff" stroke="#697bab" stroke-width="2"/><text x="18" y="34" font-size="20" font-weight="700" fill="#394b79">3</text><text x="0" y="88" font-size="17" font-weight="700" fill="#17264f">Diagnose</text><text x="0" y="112" font-size="12" fill="#566995">Loops, churn, scope escape, false done</text></g>
+    <path d="M543 450h137" stroke="#b7c8ed" stroke-width="4"/><path d="m671 442 12 8-12 8" fill="#b7c8ed"/>
+    <g transform="translate(700 424)"><circle cx="26" cy="26" r="25" fill="#eef2ff" stroke="#697bab" stroke-width="2"/><text x="18" y="34" font-size="20" font-weight="700" fill="#394b79">4</text><text x="0" y="88" font-size="17" font-weight="700" fill="#17264f">Repair</text><text x="0" y="112" font-size="12" fill="#566995">Exact next actions and verified facts</text></g>
+  </g>
+
+  <text x="68" y="596" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="800" fill="#17264f">Example session shape</text>
+  <path d="M87 617h794" stroke="#a9bae3" stroke-width="4"/>
+  <g fill="#6477ad" stroke="#fff" stroke-width="2"><circle cx="111" cy="617" r="9"/><circle cx="238" cy="617" r="9"/><circle cx="374" cy="617" r="9"/><circle cx="540" cy="617" r="9"/><circle cx="705" cy="617" r="9"/><circle cx="840" cy="617" r="9"/></g>
+  <g font-family="DejaVu Sans,Arial,sans-serif" text-anchor="middle">
+    <text x="111" y="661" font-size="13" font-weight="700" fill="#324877">READ ×3</text><text x="111" y="681" font-size="11" fill="#687aa5">repeat</text>
+    <text x="238" y="661" font-size="13" font-weight="700" fill="#324877">WRITE ×4</text><text x="238" y="681" font-size="11" fill="#687aa5">patch churn</text>
+    <text x="374" y="661" font-size="13" font-weight="700" fill="#324877">TEST FAIL</text><text x="374" y="681" font-size="11" fill="#687aa5">unresolved</text>
+    <text x="540" y="661" font-size="13" font-weight="700" fill="#324877">CLAIM DONE</text><text x="540" y="681" font-size="11" fill="#687aa5">too early</text>
+    <text x="705" y="661" font-size="13" font-weight="700" fill="#324877">NO PROOF</text><text x="705" y="681" font-size="11" fill="#687aa5">incomplete</text>
+  </g>
+
+  <g font-family="DejaVu Sans,Arial,sans-serif">
+    <g transform="translate(69 726)"><rect width="184" height="58" rx="12" fill="#edf2fc"/><text x="15" y="22" font-size="11" fill="#6274a1">Repeated reads</text><text x="15" y="47" font-size="18" font-weight="800" fill="#38558f">2</text></g>
+    <g transform="translate(273 726)"><rect width="184" height="58" rx="12" fill="#edf2fc"/><text x="15" y="22" font-size="11" fill="#6274a1">Patch churn</text><text x="15" y="47" font-size="18" font-weight="800" fill="#38558f">4</text></g>
+    <g transform="translate(477 726)"><rect width="184" height="58" rx="12" fill="#edf2fc"/><text x="15" y="22" font-size="11" fill="#6274a1">Open failures</text><text x="15" y="47" font-size="18" font-weight="800" fill="#38558f">1</text></g>
+    <g transform="translate(681 726)"><rect width="184" height="58" rx="12" fill="#edf2fc"/><text x="15" y="22" font-size="11" fill="#6274a1">Verified</text><text x="15" y="47" font-size="18" font-weight="800" fill="#38558f">NO</text></g>
+  </g>
+
+  <!-- CLI panel -->
+  <g filter="url(#shadow)"><rect x="962" y="331" width="536" height="481" rx="25" fill="#07101f" stroke="#7586c5" stroke-width="2"/></g>
+  <text x="992" y="379" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" font-weight="800" fill="#f8fafc">CLI at a glance</text>
+  <g font-family="DejaVu Sans Mono,monospace" font-size="14">
+    <text x="992" y="421" fill="#c5d0ef">$ infershape analyze session.jsonl \</text>
+    <text x="1024" y="449" fill="#b2c0e5">--html-out report.html \</text>
+    <text x="1024" y="477" fill="#b2c0e5">--repair-out repair.json</text>
+    <text x="992" y="528" fill="#788ad0">Session result:</text><text x="1148" y="528" fill="#8798dc">FALSE COMPLETE</text>
+    <text x="992" y="564" fill="#f4f7ff">First useful edit</text><text x="1216" y="564" fill="#dce5ff">00:05</text>
+    <text x="992" y="594" fill="#8293cf">First green test</text><text x="1216" y="594" fill="#8293cf">not reached</text>
+    <text x="992" y="624" fill="#f4f7ff">Repeated reads</text><text x="1216" y="624" fill="#dce5ff">2</text>
+    <text x="992" y="654" fill="#f4f7ff">Patch churn</text><text x="1216" y="654" fill="#dce5ff">4</text>
+    <text x="992" y="684" fill="#f4f7ff">Unresolved failures</text><text x="1216" y="684" fill="#dce5ff">1</text>
+    <text x="992" y="714" fill="#8293cf">Avoidable exploration</text><text x="1216" y="714" fill="#8293cf">40%</text>
+    <text x="992" y="764" fill="#9fb2ff">Repair packet written ✓</text>
+    <text x="992" y="790" fill="#9fb2ff">No prompt/output stored ✓</text>
+  </g>
+
+  <text x="44" y="845" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" fill="#bdc8e7">Open source • Apache-2.0 • Node 22+ • deterministic • zero runtime dependencies</text>
+  <text x="1250" y="845" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" fill="#dce5ff">github.com/mturac/InferShape</text>
+</svg>
