@@ -27,9 +27,10 @@ jobs:
           set -euo pipefail
           cat .bootstrap/source.* | tr -d '\r\n' | base64 --decode > /tmp/infershape.tar.gz
           echo "d9762fec9b435684a08c72fb68bcb7cb486c34846618f48a058e672399c4aad7  /tmp/infershape.tar.gz" | sha256sum --check --strict
-          tar -tzf /tmp/infershape.tar.gz | grep -qx './package.json'
-          tar -tzf /tmp/infershape.tar.gz | grep -qx './src/analyze.ts'
-          tar -tzf /tmp/infershape.tar.gz | grep -qx './README.md'
+          tar -tzf /tmp/infershape.tar.gz > /tmp/infershape-files.txt
+          grep -Fxq './package.json' /tmp/infershape-files.txt
+          grep -Fxq './src/analyze.ts' /tmp/infershape-files.txt
+          grep -Fxq './README.md' /tmp/infershape-files.txt
 
       - name: Materialize repository source
         shell: bash
